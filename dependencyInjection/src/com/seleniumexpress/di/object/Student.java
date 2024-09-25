@@ -14,8 +14,9 @@ public class Student {
 		this.mathCheat = mathCheat;
 	}
 	
-	public void display(MathCheat mathCheat) {
+	public void display() {
 		mathCheat.cheating();
+		System.out.println("my id is : " + id);
 	}
 
 }

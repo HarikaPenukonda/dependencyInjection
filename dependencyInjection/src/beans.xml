@@ -4,6 +4,13 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
         
+        <bean id="student" class="com.seleniumexpress.di.object.Student">
+        <property name="id" value="1001"></property>
+        <property name="mathCheat">
+        	<bean class="com.seleniumexpress.di.object.MathCheat"></bean>
+        </property>
+        </bean>
+        
         <bean id="ms" class="com.seleniumexpress.di.Employee">
         <constructor-arg name="empName" value="Micheal Scott"/>
         <constructor-arg name="role" value="Regional Manager"/>
