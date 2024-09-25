@@ -4,6 +4,15 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
         
+        <bean id="ms" class="com.seleniumexpress.di.Employee">
+        <constructor-arg name="empName" value="Micheal Scott"/>
+        <constructor-arg name="role" value="Regional Manager"/>
+        </bean>
+        
+         <bean id="km" class="com.seleniumexpress.di.Employee">
+        <constructor-arg name="role" value="Accountant"/>
+        </bean>
+        
         <bean id="harika" class="com.seleniumexpress.di.Student">
         <property name="id" value="1"></property>
         <property name="studentName" value="Harika Penukonda"></property>
