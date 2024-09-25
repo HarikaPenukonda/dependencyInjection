@@ -12,6 +12,7 @@ public class Main {
 		Employee emp2 = context.getBean("km",Employee.class);
 		emp1.displayEmployeeInfo();
 		emp2.displayEmployeeInfo();
+		((ClassPathXmlApplicationContext)context).close();
 //		Student s1 = context.getBean("harika",Student.class);
 //		Student s2 = context.getBean("admin",Student.class);
 //		s1.displayInfo();
