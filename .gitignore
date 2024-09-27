@@ -1,2 +1,3 @@
-dependencyInjection/bin
+dependencyInjection/.DS_Store
 dependencyInjection/.classpath
+dependencyInjection/bin
