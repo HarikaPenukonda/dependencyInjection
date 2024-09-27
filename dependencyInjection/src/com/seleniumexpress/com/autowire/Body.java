@@ -9,6 +9,7 @@ public class Body {
 		ApplicationContext context = new ClassPathXmlApplicationContext("beansTwos.xml");
 		Human human = context.getBean("human",Human.class);
 		human.pumping();
+		((ClassPathXmlApplicationContext)context).close();
 	}
 
 }
