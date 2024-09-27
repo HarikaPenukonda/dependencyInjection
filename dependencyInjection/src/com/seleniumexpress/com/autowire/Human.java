@@ -6,6 +6,10 @@ public class Human {
 	
 	public Heart heart;
 	
+	public Human() {
+
+	}
+
 	@Autowired
 	public Human(Heart heart) {
 		this.heart = heart;
