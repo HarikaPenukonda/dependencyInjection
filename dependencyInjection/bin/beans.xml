@@ -4,18 +4,16 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
         
+        <bean id="mathCheatObject" class="com.seleniumexpress.di.object.MathCheat"></bean>
+        
         <bean id="student" class="com.seleniumexpress.di.object.Student">
         <property name="id" value="1001"></property>
-        <property name="mathCheat">
-        	<bean class="com.seleniumexpress.di.object.MathCheat"></bean>
-        </property>
+        <property name="mathCheat" ref="mathCheatObject"/>
         </bean>
         
         <bean id="anotherStudent" class="com.seleniumexpress.di.object.AnotherStudent">
         <property name="id" value="1002"></property>
-        <property name="mathCheat">
-        	<bean class="com.seleniumexpress.di.object.MathCheat"></bean>
-        </property>
+        <property name="mathCheat" ref="mathCheatObject"/>
         </bean>
         
         
