@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
         
   <bean id="heartObjectValue" class="com.seleniumexpress.com.autowire.Heart"></bean> 
-  <bean id="human" class="com.seleniumexpress.com.autowire.Human" autowire="constructor">
+  <bean id="human" class="com.seleniumexpress.com.autowire.Human">
  	<!-- <property name="heart" ref="heartObject"></property>   -->
   </bean>              
         
