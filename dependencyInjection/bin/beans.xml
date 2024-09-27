@@ -11,6 +11,15 @@
         </property>
         </bean>
         
+        <bean id="anotherStudent" class="com.seleniumexpress.di.object.AnotherStudent">
+        <property name="id" value="1002"></property>
+        <property name="mathCheat">
+        	<bean class="com.seleniumexpress.di.object.MathCheat"></bean>
+        </property>
+        </bean>
+        
+        
+        
         <bean id="ms" class="com.seleniumexpress.di.Employee">
         <constructor-arg name="empName" value="Micheal Scott"/>
         <constructor-arg name="role" value="Regional Manager"/>

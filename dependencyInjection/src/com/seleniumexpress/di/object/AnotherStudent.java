@@ -1,13 +1,13 @@
 package com.seleniumexpress.di.object;
 
-public class Student {
+public class AnotherStudent {
 	
 	private int id;
 	
-	private MathCheat mathCheat; // null
-
-	public Student() {
-		System.out.println("Student constructor is called");
+	private MathCheat mathCheat;
+	
+	public AnotherStudent() {
+		System.out.println("Another student constructor is called");
 	}
 
 	public void setId(int id) {

@@ -13,7 +13,9 @@ public class Main {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 		Student stu = context.getBean("student",Student.class);
+		AnotherStudent stu1 = context.getBean("anotherStudent",AnotherStudent.class);
 		stu.display();
+		stu1.display();
 
 	}
 
