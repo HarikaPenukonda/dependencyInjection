@@ -8,15 +8,15 @@ public class Student {
 	private String interestedCourse;
 	private String hobby;
 	
-	@Value("Admin")
+	@Value("${student.name}")
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
 	}
-	@Value("Spring-framework")
+	@Value("${student.course}")
 	public void setInterestedCourse(String interestedCourse) {
 		this.interestedCourse = interestedCourse;
 	}
-	@Value("Coding")
+	@Value("${student.hobby}")
 	public void setHobby(String hobby) {
 		this.hobby = hobby;
 	}
