@@ -4,22 +4,12 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class Student {
 	
-	private String studentName;
-	private String interestedCourse;
-	private String hobby;
-	
 	@Value("${student.name}")
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
-	}
+	private String studentName;
 	@Value("${student.course}")
-	public void setInterestedCourse(String interestedCourse) {
-		this.interestedCourse = interestedCourse;
-	}
+	private String interestedCourse;
 	@Value("${student.hobby}")
-	public void setHobby(String hobby) {
-		this.hobby = hobby;
-	}
+	private String hobby;
 	
 	public void displayInfo() {
 		System.out.println("Student name : " + studentName);
