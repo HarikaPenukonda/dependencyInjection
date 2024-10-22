@@ -5,21 +5,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Human {
 	
-	public Heart heart;
-	
-	public Human() {
-
-	}
-
-	public Human(Heart heart) {
-		this.heart = heart;
-	}
-
 	@Autowired
 	@Qualifier("octopusHeart")
-	public void setHeart(Heart heart) {
-		this.heart = heart;
-	}
+	public Heart heart;
+
 	public void pumping() {
 		if(heart != null) {
 			heart.pump();
@@ -30,3 +19,8 @@ public class Human {
 	}
 
 }
+/*	No need to write setter if we are using @Autowire before dependency
+ * If the match found "humanHeart" in the beans.xml then directly 
+ * create "humanHeart" object and inject that to the dependency Heart 
+ * First it resolves using byType and then byName
+ * */
